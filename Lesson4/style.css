@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding-top: 20%;
+    background: linear-gradient(to right, #73ff008f, #00ff95d7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 70px;
+}
