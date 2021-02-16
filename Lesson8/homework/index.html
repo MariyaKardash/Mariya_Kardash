@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Paint</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="container">
+      <h1>Paint</h1>
+      <div class="paint_block">
+        <div class="choose_shape">
+          <select id="selectvalue" onchange="checkFigure()">
+            <option value="first">Choose a figure</option>
+            <option value="Circle">Circle</option>
+            <option value="Oval">Oval</option>
+            <option value="Rectangle">Rectangle</option>
+            <option value="Square">Square</option>
+          </select>
+        </div>
+        <div class="main_block">
+          <div class="draw_figure">
+            <div id="figure"></div>
+          </div>
+          <div class="choose_color" id="choose_color">
+            <div
+              class="color_item red"
+              onclick="document.getElementById('figure').style.background = 'red'"
+            ></div>
+            <div
+              class="color_item orange"
+              onclick="document.getElementById('figure').style.background = 'orange'"
+            ></div>
+            <div
+              class="color_item yellow"
+              onclick="document.getElementById('figure').style.background = 'yellow'"
+            ></div>
+            <div
+              class="color_item green"
+              onclick="document.getElementById('figure').style.background = 'green'"
+            ></div>
+            <div
+              class="color_item yellowgreen"
+              onclick="document.getElementById('figure').style.background = 'yellowgreen'"
+            ></div>
+            <div
+              class="color_item blue"
+              onclick="document.getElementById('figure').style.background = 'blue'"
+            ></div>
+            <div
+              class="color_item skyblue"
+              onclick="document.getElementById('figure').style.background = 'skyblue'"
+            ></div>
+            <div
+              class="color_item violet"
+              onclick="document.getElementById('figure').style.background = 'blueviolet'"
+            ></div>
+            <div
+              class="color_item rose"
+              onclick="document.getElementById('figure').style.background = 'violet'"
+            ></div>
+            <div
+              class="color_item brown"
+              onclick="document.getElementById('figure').style.background = 'brown'"
+            ></div>
+            <div
+              class="color_item grey"
+              onclick="document.getElementById('figure').style.background = 'grey'"
+            ></div>
+            <div
+              class="color_item black"
+              onclick="document.getElementById('figure').style.background = 'black'"
+            ></div>
+            <button class="resetButton" onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
