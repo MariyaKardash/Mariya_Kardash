@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="back">
+      <div class="modal background">
+        <div class="popap">
+          <div class="popap-head">
+            <div class="close buttonX" onclick="closeModal()">X</div>
+          </div>
+          <div class="popap-main">
+            <form class="popap-form" id="cleanForm" name="validForm">
+              <label>
+                <span>First Name</span>
+                <input type="text" name="first-Name" />
+              </label>
+              <label>
+                <span>Last Name</span>
+                <input type="text" name="last-Name" />
+              </label>
+              <label>
+                <span>Age</span>
+                <input type="text" name="age" />
+              </label>
+            </form>
+            <div class="errors">
+              <p id="error_first_name"></p>
+              <p id="error_last_name"></p>
+              <p id="error_age"></p>
+            </div>
+            <div class="popap-btn">
+              <div class="btn close" onclick="closeModal()">close</div>
+              <div class="btn ok" onclick="okButton()">ok</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn add-user" onclick="addUser()">add user</div>
+      <table id="tableID"></table>
+    </div>
+  </body>
+</html>
