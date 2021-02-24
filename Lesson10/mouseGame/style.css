@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+}
+.wrapper{
+    height: 100vh;
+    position: relative;
+    background: rgba(255, 238, 1, 0.8)
+}

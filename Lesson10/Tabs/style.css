@@ -1,0 +1,47 @@
+.tabs_block {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs_block button {
+  color: white;
+  text-transform: uppercase;
+  background-color: violet;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 12%;
+  transition: 1s;
+  border: 1px solid white;
+}
+
+.tabs_block button:hover {
+  background-color: rgb(149, 76, 221);
+}
+
+.tabs_block button.active {
+  background-color: rgb(149, 76, 221);
+}
+
+.text_item {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+h3,
+p {
+  text-align: center;
+}
+
+h3{
+  text-transform: uppercase;
+}
+
+.deleteTab{
+  margin-top: 20px;
+  border: 1px solid white;
+  padding: 10px;
+  cursor: alias;
+}

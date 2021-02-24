@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tabs</title>
+  </head>
+  <body>
+    <div class="tabs_block" id="tabs_block">
+      <button class="tab_item" onclick="showAnimal(event, 'Cat')" data-tabs="Cat">
+        Cat
+        <div class="deleteTab">X</div>
+      </button>
+      <button class="tab_item" onclick="showAnimal(event, 'Dog')" data-tabs="Dog">
+        Dog
+        <div class="deleteTab">X</div>
+      </button>
+      <button class="tab_item" onclick="showAnimal(event, 'Rabbit')" data-tabs="Rabbit">
+        Rabbit
+        <div class="deleteTab">X</div>
+      </button>
+    </div>
+
+    <div id="Cat" class="text_item">
+      <h3>Cat</h3>
+      <p>
+        <img src="./images/cat_picture.webp" alt="Котик" width="400px" />
+      </p>
+      <p>Это смешной котик.</p>
+    </div>
+
+    <div id="Dog" class="text_item">
+      <h3>Dog</h3>
+      <p>
+        <img src="./images/dog_picture.svg" alt="Пёсик" width="300px" />
+      </p>
+      <p>Это маленький пёсик.</p>
+    </div>
+
+    <div id="Rabbit" class="text_item">
+      <h3>Rabbit</h3>
+      <p>
+        <img src="./images/rubbit_picture.jpg" alt="Кролик" width="400px" />
+      </p>
+      <p>Это милый кролик.</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
